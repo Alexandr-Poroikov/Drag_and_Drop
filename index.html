@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="ru">   		<!-- или ru -->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<!-- 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
+	<!-- вставить иконку -->
+	<link rel="shortcut icon" href="#" type="image/x-icon">  	 
+	<!-- вставить ключевые слова SEO -->
+	<meta content="" name="description">						
+    <meta content="" name="author">
+	<title>Drag & Drop</title>
+	<!-- Подключаем normalize файл -->
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
+
+	<!-- Подключаем наш файл -->
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+<body>
+	<div class="wrapper">
+		<!-- drag blocks -->
+				<ul class="list">
+					<li class="list__item">
+						<h2 class="list__caption">Block-1</h2>
+						<div class="list__cell js-cell">
+							<!-- item being moved -->
+							<div class="list__card js-card" draggable="true">
+								<div class="list__card-header">
+									task title
+								</div>
+								<div class="list__card-info">
+									task description
+								</div>
+							</div>
+
+						</div>	
+					</li>
+					<li class="list__item">
+						<h2 class="list__caption">Block-2</h2>
+						<div class="list__cell js-cell"></div>
+					</li>
+					<li class="list__item">
+						<h2 class="list__caption">Block-3</h2>
+						<div class="list__cell js-cell"></div>
+					</li>
+					<li class="list__item">
+						<h2 class="list__caption">Block-4</h2>
+						<div class="list__cell js-cell"></div>
+					</li>
+				</ul>
+
+				<!-- drag links -->
+                <div class="container">
+                    <h2 class="title">Work via dataTransfer</h2>
+                    <div class="area js-area">
+                        <!-- left -->
+                        <div class="area-left js-item" id="topLeftBlock">
+                            <a class="area-left__link js-link" href="#" id="drag1">text-1</a>
+                            <a class="area-left__link js-link" href="#" id="drag2">text-2</a>
+                            <a class="area-left__link js-link" href="#" id="drag3">text-3</a>
+                        </div>
+                        <div class="area-right js-item" id="topRightBlock">
+
+                        </div>
+                    </div>
+                    <div class="condition js-condition">
+                        <div class="condition__delete js-item" id="delete">delete</div>
+                        <div class="condition__clone js-item" id="clone">clone</div>
+                    </div>
+                </div>
+                
+	</div>
+
+	<!-- Подключаем наш файл -->
+	<script src="js/main.js"></script>
+	<script></script>
+</body>
+</html>
